@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/menu/resource/php/function/addfnc.php';
   if(isset($_POST['add'])){
-  $add = new add($_POST['menu']);
+  $add = new add($_POST['menu'], $_POST['price']);
   $add->addmenu();
   header("Location: index.php");
   }
@@ -21,10 +21,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/menu/resource/php/function/addfnc.php';
 </head>
 <body>
 <div class="card text-black bg-white  text-center" style=" width: 50%;margin-left:25%; margin-top:5%;">
-  <h5 class="card-header" style="background-color:white;">Register</h5>
+  <h5 class="card-header" style="background-color:white;">Add</h5>
 <form  class="form-group bg-white text-black"action="" method="POST" style="height:100%;">
   <label>MENU</label>
   <input type="text"  class="form-control" name="menu" style="width:50%; margin-left:25%;" placeholder="Menu name" /required/><br>
+  <input type="text"  class="form-control" name="price" style="width:50%; margin-left:25%;" placeholder="Price" /required/><br>
  <input type="submit" name="add" class="btn text-white" style="background-color:black;margin-left:0%;" value="Submit"/>
 </body>
 </html>
