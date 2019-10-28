@@ -2,7 +2,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'].'\menu\resource\php\db\config.php';
 
 class add extends config{
-  public $username;
+  public $menu;
 
   function __construct($menu=null){
     $this->menu = $menu;

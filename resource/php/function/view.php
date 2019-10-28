@@ -25,7 +25,7 @@ foreach ($results as $result) {
     echo '<tr>';
     echo  '<td>'.$result->id.'</td>';
     echo  '<td>'.$result->menu.'</td>';
-    echo  '<td><a href="delete.php?id='.$result->id.'" class="btn btn-danger ml-4">DELETE</a></td>';
+    echo  '<td><a href="edit.php?id='.$result->id.'" class="btn btn-warning ml-4">Edit</a><a href="delete.php?id='.$result->id.'" class="btn btn-danger ml-4">DELETE</a></td>';
     echo '</tr>';
 }
 echo '<table>';

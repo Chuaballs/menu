@@ -12,7 +12,7 @@
 
 <body>
 <form method="POST">
-  <span> <a href="edit.php" class="btn btn-primary ml-4">ADD</a> </span>
+  <span> <a href="add.php" class="btn btn-primary ml-4">ADD</a> </span>
 
     <?php
       require_once $_SERVER['DOCUMENT_ROOT'].'/menu/resource/php/function/view.php';
