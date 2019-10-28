@@ -13,53 +13,67 @@
 <body>
 <form method="POST">
 <div class="container">
-  <table class="table ">
-    <div class="row" >
-      <div class="form-group col-4">
-        <input type="text" class="form-control" id="Lastname" name="name" aria-describedby="emailHelp" placeholder="Name" required>
-          <input class="btn login_btn btn-info" type="submit" value="SUBMIT">
-      </div>
-    </div>
+  <table class="table text-center" style="margin-top:100px;">
     <thead class="thead-primary">
     <tr>
       <th scope="col">#</th>
       <th scope="col">M E N U</th>
+      <th scope="col">ACTION</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
       <td>Chicken</td>
-      <td><input type="radio" name="RB1" value="A"></td>
+      <td>
+        <button type="button" class="btn btn-danger" name="button">Add</button>
+        <button type="button" class="btn btn-primary" name="button">Delete</button>
+      </td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Adobo</td>
-      <td><input type="radio" name="RB2" value="A"></td>
+      <td>
+        <button type="button" class="btn btn-danger" name="button">Add</button>
+        <button type="button" class="btn btn-primary" name="button">Delete</button>
+      </td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Sinigang</td>
-      <td><input type="radio" name="RB3" value="A"></td>
-
+      <td>
+        <button type="button" class="btn btn-danger" name="button">Add</button>
+        <button type="button" class="btn btn-primary" name="button">Delete</button>
+      </td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Bangus</td>
-      <td><input type="radio" name="RB4" value="A"></td>
-
+      <td>
+        <button type="button" class="btn btn-danger" name="button">Add</button>
+        <button type="button" class="btn btn-primary" name="button">Delete</button>
+      </td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Tilapia</td>
-      <td><input type="radio" name="RB5" value="A"></td>
-
+      <td>
+        <button type="button" class="btn btn-danger" name="button">Add</button>
+        <button type="button" class="btn btn-primary" name="button">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Tilapia</td>
+      <td>
+        <button type="button" class="btn btn-danger" name="button">Add</button>
+        <button type="button" class="btn btn-primary" name="button">Delete</button>
+      </td>
     </tr>
   </tbody>
-
   </table>
-</div>
 
+</div>
 
 </form>
 </body>
