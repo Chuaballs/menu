@@ -4,7 +4,7 @@ class config{
     private $pass = '';
 
     public function Connect(){
-      $this->con = new PDO('mysql:host=localhost;dbname=exam_db', $this->user, $this->pass);
+      $this->con = new PDO('mysql:host=localhost;dbname=menu', $this->user, $this->pass);
       $this->con -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
       $this->con -> setAttribute(PDO::ATTR_EMULATE_PREPARES,FALSE);
         return $this->con;
