@@ -11,8 +11,8 @@
 </head>
 
 <body>
+  <div class="container">
 <form method="POST">
-  <span> <a href="add.php" class="btn btn-primary ml-4">ADD</a> </span>
 
     <?php
       require_once $_SERVER['DOCUMENT_ROOT'].'/menu/resource/php/function/view.php';
@@ -21,10 +21,24 @@
 
       ?>
 
-  </div>
-
-  </form>
+<span> <a href="add.php" class="btn btn-primary ml-4">ADD</a> </span></br>
+</div>
+    </form>
   </body>
+
+  <?php
+  require_once $_SERVER['DOCUMENT_ROOT'].'/menu/resource/php/db/config.php';
+  $pdo = new config;
+  $pdo = $pdo->connect();
+  $stmt=$pdo->prepare("SELECT * FROM `menu` ORDER BY `id` DESC");
+  $stmt->execute();
+  if($stmt->rowCount()>0)
+  {
+  while($row=$stmt->fetch(PDO::FETCH_ASSOC))
+  {
+  extract($row);
+}}
+  ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
