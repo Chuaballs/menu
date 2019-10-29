@@ -22,7 +22,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/menu/resource/php/function/addfnc.php';
 <body>
 <div class="card text-black bg-white  text-center" style=" width: 50%;margin-left:25%; margin-top:5%;">
   <h5 class="card-header" style="background-color:white;">Add</h5>
-<form  class="form-group bg-white text-black"action="" method="POST" style="height:100%;">
+<form  class="form-group bg-white text-black"action="" method="POST" style="height:100%; " enctype="multipart/form-data">
   <label>MENU</label>
   <input type="text"  class="form-control" name="menu" style="width:50%; margin-left:25%;" placeholder="Menu name" /required/><br>
   <input type="text"  class="form-control" name="price" style="width:50%; margin-left:25%;" placeholder="Price" /required/><br>
