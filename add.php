@@ -26,6 +26,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/menu/resource/php/function/addfnc.php';
   <label>MENU</label>
   <input type="text"  class="form-control" name="menu" style="width:50%; margin-left:25%;" placeholder="Menu name" /required/><br>
   <input type="text"  class="form-control" name="price" style="width:50%; margin-left:25%;" placeholder="Price" /required/><br>
+  <input id="image" type="file" class="form-control" name="image" autocomplete="image" accept="*/image">
  <input type="submit" name="add" class="btn text-white" style="background-color:black;margin-left:0%;" value="Submit"/>
 </body>
 </html>

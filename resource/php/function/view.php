@@ -28,15 +28,7 @@ foreach ($results as $result) {
     echo  '<td>'.$result->id.'</td>';
     echo  '<td>'.$result->menu.'</td>';
     echo  '<td>'.$result->price.'</td>';
-    if ($result->menu == 'ADOBO') {
-    echo '<td><img src="resource/img/adobo.jpg" width=100px; /> </td>';
-  }elseif ($result->menu == 'TILAPIA') {
-    echo '<td><img src="resource/img/tilapia.jpg" width=100px; /> </td>';
-  }elseif ($result->menu == 'SISIG') {
-    echo '<td><img src="resource/img/sisig.jpg" width=100px; /> </td>';
-  }elseif ($result->menu == 'CHICKEN JOY'){
-    echo '<td><img src="resource/img/jobiii.jpg" width=100px; /> </td>';
-  }
+    echo "<td><img class='d-inline-block' src='uploads/$result->image' style='height: 50px; width:50px;'></td>";
     echo  '<td><a href="edit.php?id='.$result->id.'" class="btn btn-warning ml-4">Edit</a><a href="delete.php?id='.$result->id.'" class="btn btn-danger ml-4">DELETE</a></td>';
     echo '</tr>';
 }
